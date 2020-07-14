@@ -1,0 +1,20 @@
+Analysis initiated from SIMULIA established products
+Abaqus JOB Beam-job
+Abaqus Student Edition 2019
+Begin Analysis Input File Processor
+6/17/2020 5:54:07 PM
+Run pre.exe
+6/17/2020 5:54:07 PM
+End Analysis Input File Processor
+Begin Abaqus/Standard Analysis
+6/17/2020 5:54:07 PM
+Run standard.exe
+6/17/2020 5:54:08 PM
+Abaqus Error: Abaqus/Standard Analysis exited with an error - Please see the 
+message file for possible error messages if the file exists.
+Begin SIM Wrap-up
+6/17/2020 5:54:08 PM
+Run SMASimUtility.exe
+6/17/2020 5:54:08 PM
+End SIM Wrap-up
+Abaqus/Analysis exited with errors

@@ -1,0 +1,75 @@
+********************************************************************************
+Probe Values Report, written on Thu Jul  2 15:43:59 2020
+
+Source
+-------
+
+   ODB: C:/temp/Job-1.odb
+   Step: Load
+   Frame: Increment      1: Step Time =    1.000
+   Variable: S, Mises (Not averaged)
+
+Loc 1 : Integration point values
+
+Probe values reported at integration points
+
+  Part Instance  Element ID        Type  Attached nodes
+--------------------------------------------------------------------------------
+       ALL-1         269       C3D8R         181         182         559         547         185         191         604         548
+
+
+  Part Instance  Element ID        Type        Int. Pt.        S, Mises
+--------------------------------------------------------------------------------
+       ALL-1         269       C3D8R               1     548.453E+06
+
+
+********************************************************************************
+Probe Values Report, written on Thu Jul  2 15:44:08 2020
+
+Source
+-------
+
+   ODB: C:/temp/Job-1.odb
+   Step: Load
+   Frame: Increment      1: Step Time =    1.000
+   Variable: S, Mises (Not averaged)
+
+Loc 1 : Integration point values
+
+Probe values reported at integration points
+
+  Part Instance  Element ID        Type  Attached nodes
+--------------------------------------------------------------------------------
+       ALL-1         219       C3D8R         181         185         548         547         183         189         575         552
+
+
+  Part Instance  Element ID        Type        Int. Pt.        S, Mises
+--------------------------------------------------------------------------------
+       ALL-1         219       C3D8R               1     556.388E+06
+
+
+********************************************************************************
+Probe Values Report, written on Thu Jul  2 15:46:35 2020
+
+Source
+-------
+
+   ODB: C:/temp/Job-1.odb
+   Step: Load
+   Frame: Increment      1: Step Time =    1.000
+   Variable: S, Mises (Not averaged)
+
+Loc 1 : Integration point values
+
+Probe values reported at integration points
+
+  Part Instance  Element ID        Type  Attached nodes
+--------------------------------------------------------------------------------
+       ALL-1         269       C3D8R         181         182         559         547         185         191         604         548
+
+
+  Part Instance  Element ID        Type        Int. Pt.        S, Mises
+--------------------------------------------------------------------------------
+       ALL-1         269       C3D8R               1     548.453E+06
+
+

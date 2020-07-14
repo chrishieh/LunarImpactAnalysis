@@ -1,0 +1,22 @@
+Start time: 2013/10/29, 21:58:56
+Main
+readConfig ok
+InitInstance
+HSM OLD HTC driver 3.0 is not installed.
+Check Driver Version = 4.8.0.002
+HSM HTC driver 4.0 is not needed to be upgraded.
+Check Driver Version = 4.0.1.001
+The USB driver is needed to be upgraded
+HSM already installed
+HSM is running...
+HSM is running...
+Terminate HSM successful.
+WMP version = 12.0.7601.17514
+Copy Installer folder from E:\ to C:\TEMP\HTCDriver
+HSM OLD HTC driver is not existed
+Check Driver Version = 4.8.0.002
+HSM OLD HTC driver is not need to uninstall.
+Delete Installer folder C:\TEMP\HTCDriver
+file exist, run up HTC Sync Manager process
+HTC Sync Manager autorun,finished
+End time: 2013/10/29, 21:59:4
