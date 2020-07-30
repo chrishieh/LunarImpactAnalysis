@@ -1,0 +1,421 @@
+1
+
+   Abaqus Student Edition 2019                                  Date 30-Jul-2020   Time 18:54:32
+   
+
+
+
+     PROCESSING PART, INSTANCE, AND ASSEMBLY INFORMATION
+   *******************************************************
+
+
+     END PROCESSING PART, INSTANCE, AND ASSEMBLY INFORMATION
+   ***********************************************************
+
+
+
+
+     OPTIONS BEING PROCESSED
+   ***************************
+
+
+  *Heading
+  *Node
+  *Element, type=B31
+  *Nset, nset=ASSEMBLY_PART-2-1_ALL_MEMBERS
+  *Elset, elset=ASSEMBLY_PART-2-1_ALL_MEMBERS
+  *Node
+  *Element, type=S4
+  *Element, type=S3
+
+ ***NOTE: ELEMENT TYPES S3 AND S3R ARE IDENTICAL. ELEMENT TYPE S3 WILL BE 
+          REFERRED TO AS S3R FROM HERE ON
+  *Nset, nset=ASSEMBLY_PART-3-1_SET-1
+  *Elset, elset=ASSEMBLY_PART-3-1_SET-1
+  *Nset, nset=ASSEMBLY_DOME_EDGE
+  *Nset, nset=ASSEMBLY_GEODESIC_FRAME
+  *Nset, nset=ASSEMBLY_MOUNTING_POINTS
+  *Nset, nset=ASSEMBLY_SET-2
+  *Nset, nset=ASSEMBLY_SET-4
+  *Nset, nset=ASSEMBLY_SET-5
+  *Nset, nset=ASSEMBLY_SET-6
+  *Nset, nset=ASSEMBLY_S_SET-7
+  *Nset, nset=ASSEMBLY_S_SET-9
+  *Elset, elset=ASSEMBLY_DOME_EDGE
+  *Elset, elset=ASSEMBLY_GEODESIC_FRAME
+  *Elset, elset=ASSEMBLY_SET-4
+  *Elset, elset=ASSEMBLY_SET-5
+  *Elset, elset=ASSEMBLY_SET-6
+  *Elset, elset=ASSEMBLY_S_SET-7
+  *Elset, elset=ASSEMBLY_S_SET-9
+  *Elset, elset=ASSEMBLY__M_SURF-1_SPOS
+  *Elset, elset=ASSEMBLY__M_SURF-3_SPOS
+  *Elset, elset=ASSEMBLY__M_SURF-4_SPOS
+  *Elset, elset=ASSEMBLY__PRESSURE_SURFACE_SPOS
+  *material, name=ALUMINUM_6061
+  *density
+  *elastic
+  *material, name=KEVLAR
+  *density
+  *elastic
+  *shellsection, elset=ASSEMBLY_PART-3-1_SET-1, material=KEVLAR
+  *beamsection, elset=ASSEMBLY_PART-2-1_ALL_MEMBERS, temperature=GRADIENTS, material=ALUMINUM_6061, section=CIRCULAR
+  *shellsection, elset=ASSEMBLY_PART-3-1_SET-1, material=KEVLAR
+  *contactpair, interaction=INTPROP-1, type=SURFACETOSURFACE
+  *surface, type=ELEMENT, name=ASSEMBLY_PRESSURE_SURFACE
+  *surface, type=ELEMENT, name=ASSEMBLY_M_SURF-1
+  *surface, type=ELEMENT, name=ASSEMBLY_M_SURF-3
+  *surface, type=ELEMENT, name=ASSEMBLY_M_SURF-4
+  *surface, type=NODE, name=ASSEMBLY_S_SET-9_CNS_
+  *contactpair, interaction=INTPROP-1, type=SURFACETOSURFACE
+  *surface, type=ELEMENT, name=ASSEMBLY_PRESSURE_SURFACE
+  *surface, type=ELEMENT, name=ASSEMBLY_M_SURF-1
+  *surface, type=ELEMENT, name=ASSEMBLY_M_SURF-3
+  *surface, type=ELEMENT, name=ASSEMBLY_M_SURF-4
+  *surface, type=NODE, name=ASSEMBLY_S_SET-9_CNS_
+  *surface, type=ELEMENT, name=ASSEMBLY_PRESSURE_SURFACE
+  *surface, type=ELEMENT, name=ASSEMBLY_M_SURF-1
+  *surface, type=ELEMENT, name=ASSEMBLY_M_SURF-3
+  *surface, type=ELEMENT, name=ASSEMBLY_M_SURF-4
+  *surface, type=NODE, name=ASSEMBLY_S_SET-9_CNS_
+  *contactpair, interaction=INTPROP-1, type=SURFACETOSURFACE
+
+ ***NOTE: THE ROTATIONAL DEGREES OF FREEDOM OF THE NODES THAT CONSTITUTE THE 
+          SURFACES WILL NOT BE CONSTRAINED BETWEEN THE SLAVE AND MASTER PAIR 
+          (ASSEMBLY_S_SET-9_CNS_, ASSEMBLY_M_SURF-4).
+
+ ***NOTE: ROTATIONAL DEGREES OF FREEDOM WILL NOT BE CONSTRAINED BETWEEN THE 
+          SLAVE AND MASTER PAIR (ASSEMBLY_S_SET-9_CNS_, ASSEMBLY_M_SURF-4).
+  *surfaceinteraction, name=INTPROP-1
+  *contactpair, interaction=INTPROP-1, type=SURFACETOSURFACE
+
+ ***NOTE: THE ROTATIONAL DEGREES OF FREEDOM OF THE NODES THAT CONSTITUTE THE 
+          SURFACES WILL NOT BE CONSTRAINED BETWEEN THE SLAVE AND MASTER PAIR 
+          (ASSEMBLY_S_SET-9_CNS_, ASSEMBLY_M_SURF-4).
+
+ ***NOTE: ROTATIONAL DEGREES OF FREEDOM WILL NOT BE CONSTRAINED BETWEEN THE 
+          SLAVE AND MASTER PAIR (ASSEMBLY_S_SET-9_CNS_, ASSEMBLY_M_SURF-4).
+  *contactpair, interaction=INTPROP-1, type=SURFACETOSURFACE
+
+ ***NOTE: THE ROTATIONAL DEGREES OF FREEDOM OF THE NODES THAT CONSTITUTE THE 
+          SURFACES WILL NOT BE CONSTRAINED BETWEEN THE SLAVE AND MASTER PAIR 
+          (ASSEMBLY_S_SET-9_CNS_, ASSEMBLY_M_SURF-4).
+
+ ***NOTE: ROTATIONAL DEGREES OF FREEDOM WILL NOT BE CONSTRAINED BETWEEN THE 
+          SLAVE AND MASTER PAIR (ASSEMBLY_S_SET-9_CNS_, ASSEMBLY_M_SURF-4).
+  *surfaceinteraction, name=INTPROP-1
+  *friction
+  *surfaceinteraction, name=INTPROP-1
+  *boundary
+  *boundary
+  *boundary
+  *boundary
+  *contactpair, interaction=INTPROP-1, type=SURFACETOSURFACE
+
+ ***NOTE: THE ROTATIONAL DEGREES OF FREEDOM OF THE NODES THAT CONSTITUTE THE 
+          SURFACES WILL NOT BE CONSTRAINED BETWEEN THE SLAVE AND MASTER PAIR 
+          (ASSEMBLY_S_SET-9_CNS_, ASSEMBLY_M_SURF-4).
+
+ ***NOTE: ROTATIONAL DEGREES OF FREEDOM WILL NOT BE CONSTRAINED BETWEEN THE 
+          SLAVE AND MASTER PAIR (ASSEMBLY_S_SET-9_CNS_, ASSEMBLY_M_SURF-4).
+
+ ***WARNING: SLAVE SURFACE ASSEMBLY_S_SET-9_CNS_ IS A NODE-BASED SURFACE USED 
+             WITH SURFACE TO SURFACE APPROACH.  IN ORDER TO OBTAIN IMPROVED 
+             STRESS ACCURACY WITH THIS APPROACH, AN ELEMENT-BASED SURFACE 
+             SHOULD BE USED INSTEAD.
+
+ ***NOTE: THE ROTATIONAL DEGREES OF FREEDOM OF THE NODES THAT CONSTITUTE THE 
+          SURFACES WILL NOT BE CONSTRAINED BETWEEN THE SLAVE AND MASTER PAIR 
+          (ASSEMBLY_S_SET-9_CNS_, ASSEMBLY_M_SURF-4).
+
+ ***NOTE: ROTATIONAL DEGREES OF FREEDOM WILL NOT BE CONSTRAINED BETWEEN THE 
+          SLAVE AND MASTER PAIR (ASSEMBLY_S_SET-9_CNS_, ASSEMBLY_M_SURF-4).
+  *surfaceinteraction, name=INTPROP-1
+  *contactpair, interaction=INTPROP-1, type=SURFACETOSURFACE
+
+ ***NOTE: THE ROTATIONAL DEGREES OF FREEDOM OF THE NODES THAT CONSTITUTE THE 
+          SURFACES WILL NOT BE CONSTRAINED BETWEEN THE SLAVE AND MASTER PAIR 
+          (ASSEMBLY_S_SET-9_CNS_, ASSEMBLY_M_SURF-4).
+
+ ***NOTE: ROTATIONAL DEGREES OF FREEDOM WILL NOT BE CONSTRAINED BETWEEN THE 
+          SLAVE AND MASTER PAIR (ASSEMBLY_S_SET-9_CNS_, ASSEMBLY_M_SURF-4).
+  *surface, type=ELEMENT, name=ASSEMBLY_PRESSURE_SURFACE
+  *surface, type=ELEMENT, name=ASSEMBLY_M_SURF-1
+  *surface, type=ELEMENT, name=ASSEMBLY_M_SURF-3
+  *surface, type=ELEMENT, name=ASSEMBLY_M_SURF-4
+  *surface, type=NODE, name=ASSEMBLY_S_SET-9_CNS_
+  *output, field, variable=PRESELECT
+  *output, history, variable=PRESELECT
+  *output, field, variable=PRESELECT
+  *output, history, variable=PRESELECT
+  *output, field, variable=PRESELECT
+  *output, history, variable=PRESELECT
+  
+                               E L E M E N T   Q U A L I T Y  C H E C K S        
+  
+  
+ ***NOTES: DISTORTED ISOPARAMETRIC ELEMENTS: ANGLE BETWEEN ISOPARAMETRIC LINES 
+           IS LESS THAN 45 DEGREES OR GREATER THAN 135 DEGREES.
+  
+           TETRAHEDRAL QUALITY MEASURE: VOLUME OF TETRAHEDRON DIVIDED BY THE 
+           VOLUME OF EQUILATERAL TETRAHEDRON WITH SAME CIRCUMSPHERE RADIUS; 
+           0 FOR DEGENERATE TETRAHEDRON AND 1 FOR EQUILATERIAL TETRAHEDRON. IT 
+           IS RECOMMENDED THAT THE TETRAHEDRAL QUALITY MEASURE BE GREATER THAN 
+           0.02, THE MIN INTERIOR (DIHEDRAL) ANGLE BE GREATER THAN 10 DEGREES, 
+           AND THE MAX INTERIOR (DIHEDRAL) ANGLE BE LESS THAN 160 DEGREES. 
+  
+           MODIFIED TETRAHEDRAL QUALITY MEASURE: ANGLES BETWEEN THE TWO LINE 
+           SEGMENTS ON EACH EDGE; THE EDGES OF MODIFIED TETRAHEDRAL SHOULD BE 
+           AS STRAIGHT AS POSSIBLE. IT IS RECOMMENDED THAT THE ANGLE BETWEEN 
+           THE TWO LINE SEGMENTS ON EACH EDGE IS BETWEEN 160 AND 180 DEGREES. 
+  
+           TRIANGULAR QUALITY MEASURE: AREA OF TRIANGLE DIVIDED BY THE AREA OF 
+           EQUILATERAL TRIANGLE WITH SAME CIRCUMCIRCLE RADIUS; 0 FOR DEGENERATE 
+           TRIANGLE AND 1 FOR EQUILATERAL TRIANGLE. IT IS RECOMMENDED THAT THE
+           TRIANGULAR QUALITY MEASURE BE GREATER THAN 0.01, THE MIN INTERIOR 
+           ANGLE BE GREATER THAN 10 DEGREES, AND THE MAX INTERIOR ANGLE BE LESS 
+           THAN 160 DEGREES. 
+  
+           NODAL ADJUSTMENTS ARISING FROM CONTACT INTERACTIONS AND/OR TIE 
+           CONSTRAINTS CAN CAUSE SEVERE ELEMENT DISTORTION. IT MAY BE NECESSARY 
+           TO REMESH IN ORDER TO REDUCE THE AMOUNT OF ADJUSTMENT. 
+
+ ***WARNING: 36 elements are distorted. Either the isoparametric angles are out 
+             of the suggested limits or the triangular or tetrahedral quality 
+             measure is bad. The elements have been identified in element set 
+             WarnElemDistorted.
+
+ ***WARNING: For 36 beam elements either the average curvature about the local 
+             1-direction differs by more than 0.1 degrees per unit length as 
+             compared to the default curvature or the approximate integrated 
+             curvature for the entire beam differs by more than 5 degrees as 
+             compared to the approximate integrated default curvature. This may 
+             be due to a user-specified normal or due to the nodal averaging 
+             routine used by Abaqus. This difference may cause unexpected 
+             behavior of the beam and you may want to verify that the beam 
+             normals are correct for your problem. The elements have been 
+             identified in element set WarnBeamCurvature1.
+
+ ***WARNING: For 36 beam elements either the average curvature about the beam 
+             tangent differs by more than 0.1 degrees per unit length as 
+             compared to the default curvature or the approximate integrated 
+             curvature for the entire beam differs by more than 5 degrees as 
+             compared to the approximate integrated default curvature. This may 
+             be due to a user-specified normal or due to the nodal averaging 
+             routine used by Abaqus. This difference may cause unexpected 
+             behavior of the beam and you may want to verify that the beam 
+             normals are correct for your problem. The elements have been 
+             identified in element set WarnBeamTwist.
+  
+ --------------------------------------------------------------------------------
+ Distorted isoparametric elements
+  
+      Element        Min/max angle   Adjusted nodes 
+ ------------------ ---------------- -------------- 
+       PART-3-1.289          9.95165       NO       
+       PART-3-1.290          9.95165       NO       
+       PART-3-1.291          9.95165       NO       
+       PART-3-1.292          9.95165       NO       
+       PART-3-1.293          9.95165       NO       
+       PART-3-1.294          9.95165       NO       
+       PART-3-1.295          9.95165       NO       
+       PART-3-1.296          9.95165       NO       
+       PART-3-1.297          9.95165       NO       
+       PART-3-1.298          9.95165       NO       
+       PART-3-1.299          9.95165       NO       
+       PART-3-1.300          9.95165       NO       
+       PART-3-1.301          9.95165       NO       
+       PART-3-1.302          9.95165       NO       
+       PART-3-1.303          9.95165       NO       
+       PART-3-1.304          9.95165       NO       
+       PART-3-1.305          9.95165       NO       
+       PART-3-1.306          9.95165       NO       
+       PART-3-1.307          9.95165       NO       
+       PART-3-1.308          9.95165       NO       
+       PART-3-1.309          9.95165       NO       
+       PART-3-1.310          9.95165       NO       
+       PART-3-1.311          9.95165       NO       
+       PART-3-1.312          9.95165       NO       
+       PART-3-1.313          9.95165       NO       
+       PART-3-1.314          9.95165       NO       
+       PART-3-1.315          9.95165       NO       
+       PART-3-1.316          9.95165       NO       
+       PART-3-1.317          9.95165       NO       
+       PART-3-1.318          9.95165       NO       
+       PART-3-1.319          9.95165       NO       
+       PART-3-1.320          9.95165       NO       
+       PART-3-1.321          9.95165       NO       
+       PART-3-1.322          9.95165       NO       
+       PART-3-1.323          9.95165       NO       
+       PART-3-1.324          9.95165       NO       
+  
+  
+  *Step, name=Step-1, nlgeom=NO
+  *output, field, variable=PRESELECT
+  *output, history, variable=PRESELECT
+  *Step, name=Step-1, nlgeom=NO
+  *Step, name=Step-1, nlgeom=NO
+  *dynamic
+  *boundary
+  *boundary
+  *dsload
+  *output, field, variable=PRESELECT
+  *output, history, variable=PRESELECT
+  *endstep
+  *Step, name=Step-1, nlgeom=NO
+  *dynamic
+  *boundary
+  *boundary
+  *endstep
+
+     - (RAMP) OR (STEP) - INDICATE USE OF DEFAULT AMPLITUDES ASSOCIATED WITH THE STEP
+
+
+
+                            P R O B L E M   S I Z E
+
+
+          NUMBER OF ELEMENTS IS                                   745
+          NUMBER OF ELEMENTS DEFINED BY THE USER AND *TIE         554
+          NUMBER OF INTERNAL ELEMENTS GENERATED FOR CONTACT       191
+          NUMBER OF NODES IS                                     1358
+          NUMBER OF NODES DEFINED BY THE USER                     516
+          NUMBER OF INTERNAL NODES GENERATED BY THE PROGRAM       842
+          TOTAL NUMBER OF VARIABLES IN THE MODEL                 3669
+          (DEGREES OF FREEDOM PLUS MAX NO. OF ANY LAGRANGE MULTIPLIER
+           VARIABLES. INCLUDE *PRINT,SOLVE=YES TO GET THE ACTUAL NUMBER.)
+
+
+
+                              END OF USER INPUT PROCESSING
+
+
+
+     JOB TIME SUMMARY
+       USER TIME (SEC)      =  0.20000    
+       SYSTEM TIME (SEC)    =  0.10000    
+       TOTAL CPU TIME (SEC) =  0.30000    
+       WALLCLOCK TIME (SEC) =          0
+1
+
+   Abaqus Student Edition 2019                                  Date 30-Jul-2020   Time 18:54:33
+   
+
+                                                                                               STEP    1  INCREMENT    1
+                                                                                          TIME COMPLETED IN THIS STEP   0.00    
+
+
+                        S T E P       1     D Y N A M I C   A N A L Y S I S - I M P L I C I T  I N T E G R A T I O N
+
+
+                                                                                          
+
+          DYNAMIC APPLICATION PACKED SCHEME IS                 MODERATE DISSIPATION
+          HILBER-HUGHES-TAYLOR (HHT) TIME INTEGRATOR IS USED
+
+     AUTOMATIC TIME CONTROL WITH -
+          A SUGGESTED INITIAL TIME INCREMENT OF                 1.00    
+          AND A TOTAL TIME PERIOD OF                            1.00    
+          THE MINIMUM TIME INCREMENT ALLOWED IS                1.000E-05
+          THE MAXIMUM TIME INCREMENT ALLOWED IS                 1.00    
+
+          THE HALF-INCREMENT RESIDUALS WILL NOT BE CALCULATED
+
+          INITIAL ACCELERATIONS WILL NOT BE CALCULATED
+
+          HILBER-HUGHES-TAYLOR METHOD PARAMETERS:  ALPHA   IS  -0.414214    
+                                                   BETA    IS   0.500000    
+                                                   GAMMA   IS   0.914214    
+          CONTACT IMPACT/RELEASE COMPUTATIONS ARE SKIPPED
+          AGGRESSIVE   TIME INCREMENTATION IS USED
+          STEP AMPLITUDE IS                                    STEP
+
+
+
+                    TOTAL MASS OF MODEL
+
+                       7566.543    
+
+
+                    LOCATION OF THE CENTER OF MASS OF THE MODEL
+
+                     -0.4404069           4.735314          -1.448020    
+
+
+                    MOMENTS OF INERTIA ABOUT THE ORIGIN
+                           I(XX)               I(YY)               I(ZZ)
+
+                       211444.2           43245.72           212190.2    
+
+
+                    PRODUCTS OF INERTIA ABOUT THE ORIGIN
+                           I(XY)               I(XZ)               I(YZ)
+
+                       15779.76          -4825.321           51882.50    
+
+
+                    MOMENTS OF INERTIA ABOUT THE CENTER OF MASS
+                           I(XX)               I(YY)               I(ZZ)
+
+                       25912.89           25912.89           41056.52    
+
+
+                    PRODUCTS OF INERTIA ABOUT THE CENTER OF MASS
+                           I(XY)               I(XZ)               I(YZ)
+
+                     -2.3646862E-11     -1.4824087E-04      6.9398789E-05
+  
+                   M E M O R Y   E S T I M A T E
+  
+ PROCESS      FLOATING PT       MINIMUM MEMORY        MEMORY TO
+              OPERATIONS           REQUIRED          MINIMIZE I/O
+             PER ITERATION           (MB)               (MB)
+  
+     1          2.09E+07               20                 30
+  
+ NOTE:
+      (1) SINCE ABAQUS DOES NOT PRE-ALLOCATE MEMORY AND ONLY ALLOCATES MEMORY AS NEEDED DURING THE ANALYSIS,
+          THE MEMORY REQUIREMENT PRINTED HERE CAN ONLY BE VIEWED AS A GENERAL GUIDELINE BASED ON THE BEST
+          KNOWLEDGE AVAILABLE AT THE BEGINNING OF A STEP BEFORE THE SOLUTION PROCESS HAS BEGUN.
+      (2) THE ESTIMATE IS NORMALLY UPDATED AT THE BEGINNING OF EVERY STEP. IT IS THE MAXIMUM VALUE OF THE
+          ESTIMATE FROM THE CURRENT STEP TO THE LAST STEP OF THE ANALYSIS, WITH UNSYMMETRIC SOLUTION TAKEN
+          INTO ACCOUNT IF APPLICABLE. 
+      (3) SINCE THE ESTIMATE IS BASED ON THE ACTIVE DEGREES OF FREEDOM IN THE FIRST ITERATION OF THE 
+          CURRENT STEP, THE MEMORY ESTIMATE MIGHT BE SIGNIFICANTLY DIFFERENT THAN ACTUAL USAGE FOR 
+          PROBLEMS WITH SUBSTANTIAL CHANGES IN ACTIVE DEGREES OF FREEDOM BETWEEN STEPS (OR EVEN WITHIN
+          THE SAME STEP). EXAMPLES ARE: PROBLEMS WITH SIGNIFICANT CONTACT CHANGES, PROBLEMS WITH MODEL
+          CHANGE, PROBLEMS WITH BOTH STATIC STEP AND STEADY STATE DYNAMIC PROCEDURES WHERE ACOUSTIC 
+          ELEMENTS WILL ONLY BE ACTIVATED IN THE STEADY STATE DYNAMIC STEPS.
+      (4) FOR MULTI-PROCESS EXECUTION, THE ESTIMATED VALUE OF FLOATING POINT OPERATIONS FOR EACH PROCESS
+          IS BASED ON AN INITIAL SCHEDULING OF OPERATIONS AND MIGHT NOT REFLECT THE ACTUAL FLOATING 
+          POINT OPERATIONS COMPLETED ON EACH PROCESS. OPERATIONS ARE DYNAMICALLY BALANCED DURING EXECUTION, 
+          SO THE ACTUAL BALANCE OF OPERATIONS BETWEEN PROCESSES IS EXPECTED TO BE BETTER THAN THE ESTIMATE
+          PRINTED HERE.
+      (5) THE UPPER LIMIT OF MEMORY THAT CAN BE ALLOCATED BY ABAQUS WILL IN GENERAL DEPEND ON THE VALUE OF
+          THE "MEMORY" PARAMETER AND THE AMOUNT OF PHYSICAL MEMORY AVAILABLE ON THE MACHINE. PLEASE SEE
+          THE "ABAQUS ANALYSIS USER'S MANUAL" FOR MORE DETAILS. THE ACTUAL USAGE OF MEMORY AND OF DISK
+          SPACE FOR SCRATCH DATA WILL DEPEND ON THIS UPPER LIMIT AS WELL AS THE MEMORY REQUIRED TO MINIMIZE
+          I/O. IF THE MEMORY UPPER LIMIT IS GREATER THAN THE MEMORY REQUIRED TO MINIMIZE I/O, THEN THE ACTUAL
+          MEMORY USAGE WILL BE CLOSE TO THE ESTIMATED "MEMORY TO MINIMIZE I/O" VALUE, AND THE SCRATCH DISK
+          USAGE WILL BE CLOSE-TO-ZERO; OTHERWISE, THE ACTUAL MEMORY USED WILL BE CLOSE TO THE PREVIOUSLY
+          MENTIONED MEMORY LIMIT, AND THE SCRATCH DISK USAGE WILL BE ROUGHLY PROPORTIONAL TO THE DIFFERENCE
+          BETWEEN THE ESTIMATED "MEMORY TO MINIMIZE I/O" AND THE MEMORY UPPER LIMIT. HOWEVER ACCURATE
+          ESTIMATE OF THE SCRATCH DISK SPACE IS NOT POSSIBLE.
+      (6) USING "*RESTART, WRITE" CAN GENERATE A LARGE AMOUNT OF DATA WRITTEN IN THE WORK DIRECTORY.
+
+
+          THE ANALYSIS HAS BEEN COMPLETED
+
+
+
+                              ANALYSIS COMPLETE
+                              WITH      4 WARNING MESSAGES ON THE DAT FILE
+                              AND       1 WARNING MESSAGES ON THE MSG FILE
+
+
+
+     JOB TIME SUMMARY
+       USER TIME (SEC)      =  0.40000    
+       SYSTEM TIME (SEC)    =  0.10000    
+       TOTAL CPU TIME (SEC) =  0.50000    
+       WALLCLOCK TIME (SEC) =          1
